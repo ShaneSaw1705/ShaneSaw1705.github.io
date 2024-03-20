@@ -6,6 +6,8 @@ body {
     padding: 0;
 }
 
+/* Home page css */
+
 .header {
     display: flex;
     flex-direction: column;
