@@ -7,7 +7,7 @@
     <title>My Blog</title>
 </head>
 <body>
-    <div>
+    <div class="nav-bar">
         <div class="left-nav">
             <h3>Shane Curtis</h3>
             <h5>Full stack dev</h5>
@@ -20,7 +20,7 @@
         <div class="header-container">
             <h1>Kia ora Taiao! (Hello World!)</h1> 
             <p> This is the beginning of my website home page.</p>
-            <p> It will eventually contain a list of links to all my blogs. </p>
+            <p> Feel free to browse! </p>
         </div>
     </div>
     <div class="content">
@@ -33,5 +33,15 @@
                 Their partnership is a testament to the power of teamwork, showcasing that even the most unlikely pairs can conjure wonders. So here's to HTML and CSS, the dynamic duo inspiring us all to dream big in the enchanting world of coding. Keep those smiles wide, keep coding away, and who knows? Perhaps you'll be the mastermind behind the next big online sensation! Happy coding, dear friends! 🚀</p>
         </div>
     </div>
+    <script>
+        window.addEventListener('scroll', function() {
+            const navBar = document.querySelector('.nav-bar');
+            if (window.pageYOffset > 20) {
+                navBar.classList.add('scrolled');
+            } else {
+                navBar.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
 </html>

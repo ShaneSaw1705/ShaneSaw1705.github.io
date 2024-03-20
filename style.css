@@ -61,3 +61,69 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.664);
 }
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    border-radius: 10px;
+    width: 80vw;
+    left: 50%;
+    top: 10px;
+    transform: translate(-50%);
+    z-index: 1000;
+    padding-inline: 20px;
+    transition: all 200ms ease-in-out;
+}
+
+.nav-bar h3, .nav-bar h5 {
+    text-shadow: 0 0 5px rgb(0, 0, 0);
+}
+
+.nav-bar.scrolled {
+    background-color: aliceblue;
+    color: #393939;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.738);
+}
+
+.nav-bar.scrolled button {
+    background-color: #393939;
+    color: aliceblue;
+}
+
+.nav-bar.scrolled h3, .nav-bar.scrolled h5 {
+    text-shadow: none;
+}
+
+.right-nav button {
+    border-style: none;
+    background-color: aliceblue;
+    color: #393939;
+    padding-block: 10px;
+    padding-inline: 20px;
+    border-radius: 10px;
+    transition: all 200ms ease-in-out;
+}
+
+.right-nav button:hover {
+    background-color: #393939;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.left-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-nav h3 {
+    margin-right: 5px;
+}
+
+.left-nav h5 {
+    position: relative;
+    top: 1.5px;
+}
