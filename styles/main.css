@@ -6,6 +6,10 @@ body {
     padding: 0;
 }
 
+:root {
+    --main-color: #f64c72;
+}
+
 /* Home page css */
 
 .divider {
@@ -57,7 +61,7 @@ body {
     align-items: center;
     justify-content: start;
     padding: 20px;
-    max-width: 600px;
+    max-width: 1200px;
     height: 100%;
     min-height: 100vh;
     margin: auto;
@@ -89,25 +93,15 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.738);
 }
 
-.nav-bar.scrolled button {
-    background-color: #393939;
-    color: aliceblue;
-}
-
-.nav-bar.scrolled button:hover {
-    background-color: aliceblue;
-    color: #393939;
-    box-shadow: 0 0 10px black;
-}
-
 .nav-bar.scrolled h3, .nav-bar.scrolled h5 {
     text-shadow: none;
 }
 
 .right-nav button {
     border-style: none;
-    background-color: aliceblue;
-    color: #393939;
+    background-color: var(--main-color);
+    color: aliceblue;
+    font-weight: 600;
     padding-block: 10px;
     padding-inline: 20px;
     border-radius: 10px;
@@ -118,6 +112,7 @@ body {
     background-color: #393939;
     color: aliceblue;
     cursor: pointer;
+    transform: scale(1.1);
 }
 
 .left-nav {
@@ -133,4 +128,47 @@ body {
 .left-nav h5 {
     position: relative;
     top: 1.5px;
+}
+
+.text-section {
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.687);
+}
+
+.about-me {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.about-me * {
+    margin-inline: 20px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    min-width: 30%;
+    padding: 20px;
+    background-color: aliceblue;
+    color: #393939;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.512);
+}
+
+.links ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+}
+
+.links ul li {
+    margin-block: 10px;
+}
+.links ul li a {
+    text-decoration: none;
+    color: var(--main-color);
 }
