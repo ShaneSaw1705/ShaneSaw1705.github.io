@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/padding-margins.css">
     <title>Padding vs Margin</title>
 </head>
 <body>
@@ -14,7 +15,52 @@
   
         <div class="divider">
 
-        <p>In this article</p>
+        <div>
+            <div class="blog-header">
+                <h4>In this article I will be breaking down the difference between padding and margins in css</h4>
+                <p>The css box system works like this</p>
+                <div class="blog-image">
+                    <img src="/images/css-box-model.jpg" alt="">
+                    <p>The box system is split in to 4 components: Content, Padding, Border and Margin; it may seem like the majority of theese
+                        serve the same purpose but they are all very different</p>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <!-- Padding Button -->
+            <div class="padding-section">
+                <h4>Watch what happens when you hover over this button</h4>
+                <butto class="padding-button">Hover me</button>
+            </div>
+            <p>See how the button grew? This is a resault of increasing the padding within the buttons css you can think of it
+                as adding space around the content inside of the button, which grows the outer radius and background
+            </p>
+            <div class="divider"></div>
+            <!--Margin Section-->
+            <div class="margin-section">
+                <h4>Now watch what happens with this group of buttons when you hover over one of them</h4>
+                <div class="margin-buttons">
+                    <button>Hover me!</button>
+                    <button>NO! Hover me!</button>
+                    <button>What about me?</button>
+                </div>
+            </div>
+            <p>The margin of the button is increasing and pushing the other elements away. Margin is alot like padding however its
+                influence is on the outside of the element rather than the inside
+            </p>
+            <div class="divider"></div>
+
+            <!--Special mention-->
+            <h3>Special mention!</h3>
+            <p>I feel like border is pretty self explainitory however did you know that there are alot of predifined border types in css?
+                Here are a few examples:
+            </p>
+            <div class="border-example">
+                <button class="border-example-solid">Solid</button>
+                <button class="border-example-dashed">Dashed</button>
+                <button class="border-example-dotted">Dotted</button>
+                <button class="border-example-double">Double</button>
+            </div>
+        </div>
       </div>
 </body>
 </html>

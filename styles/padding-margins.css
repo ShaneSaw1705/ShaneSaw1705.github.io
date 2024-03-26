@@ -1,0 +1,149 @@
+:root {
+    --main-color: #f64c72;
+}
+
+.blog-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+.blog-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-block: 20px;
+    width: 100vw;
+}
+
+.blog-image p {
+    width: 30%;
+    background-color: aliceblue;
+    color: #393939;
+    padding: 20px;
+    border-radius: 20px;
+    font-weight: 300;
+}
+
+.blog-image * {
+    margin: auto;
+}
+
+.blog-header img {
+    width: 300px;
+}
+
+.padding-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block: 30px;
+}
+.padding-section * {
+    margin-inline: 20px;
+
+}
+
+.margin-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block: 30px;
+}
+
+.margin-section p {
+    margin-right: 20px;
+}
+
+.margin-buttons {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.margin-buttons button {
+    border-style: solid;
+    background-color: #393939;
+    color: aliceblue;
+    padding: 10px;
+    transition: all 300ms ease-in-out;
+}
+
+.margin-buttons button:hover {
+    background-color: slategray;
+    cursor: pointer;
+    margin-inline: 15px;
+}
+
+.padding-button {
+    padding: 10px;
+    background-color: var(--main-color);
+    color: aliceblue;
+    border-style: none;
+    border-radius: 20px;
+    font-weight: 800;
+    transition: all 200ms ease-in-out;
+}
+
+.padding-button:hover {
+    padding: 20px;
+    border-radius: 5px;
+    cursor: grab;
+}
+
+.margin-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.border-example {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: 100px;
+}
+
+.border-example * {
+    background: none;
+    color: aliceblue;
+    padding: 10px;
+}
+
+.border-example-solid {
+    background: none;
+    color: aliceblue;
+    padding: 10px;
+    border-style: solid;
+    border-color: aliceblue;
+    border-width: 5px;
+}
+
+.border-example-dashed {
+    background: none;
+    color: aliceblue;
+    padding: 10px;
+    border-style: dashed;
+    border-color: aliceblue;
+    border-width: 5px;
+}
+
+.border-example-dotted {
+    background: none;
+    color: aliceblue;
+    padding: 10px;
+    border-style: dotted;
+    border-color: aliceblue;
+    border-width: 5px;
+}
+
+.border-example-double {
+    background: none;
+    color: aliceblue;
+    padding: 10px;
+    border-style: double;
+    border-color: aliceblue;
+    border-width: 5px;
+}
