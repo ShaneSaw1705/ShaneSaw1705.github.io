@@ -59,10 +59,15 @@
     margin-right: 20px;
 }
 
+.margin-section * {
+    padding-inline: 20px;
+}
+
 .margin-buttons {
     display: flex;
     align-items: center;
     margin-right: 20px;
+    width: 30%;
 }
 
 .margin-buttons button {
