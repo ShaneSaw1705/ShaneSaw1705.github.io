@@ -2,6 +2,10 @@
     --main-color: #f64c72;
 }
 
+body {
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.442);
+}
+
 .blog-header {
     display: flex;
     flex-direction: column;
@@ -26,6 +30,9 @@
     padding: 20px;
     border-radius: 20px;
     font-weight: 300;
+    text-shadow: none;
+    font-size: large;
+    font-weight: 700;
 }
 .blog-image * {
     margin: auto;
@@ -40,8 +47,9 @@
 .padding-section {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-block: 30px;
+    justify-content: space-between;
+    max-width: 60%;
+    margin: auto;
 }
 .padding-section * {
     margin-inline: 20px;
@@ -95,7 +103,8 @@
 }
 
 .padding-button:hover {
-    padding: 20px;
+    padding-inline: 20px;
+    padding-block: 15px;
     border-radius: 5px;
     cursor: grab;
 }

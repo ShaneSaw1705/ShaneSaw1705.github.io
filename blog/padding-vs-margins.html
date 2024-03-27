@@ -8,10 +8,23 @@
     <title>Padding vs Margin</title>
 </head>
 <body>
+    <div class="nav-bar">
+        <div class="left-nav">
+            <h3>Shane Curtis</h3>
+            <h5>Full stack dev</h5>
+        </div>
+        <div class="right-nav">
+            <a href="/index.html"><button>Blog Posts</button></a>
+        </div>
+    </div>
+    <div class="header">
+        <div class="header-container">
+            <h1>The difference between Padding and Margin</h1>
+            <h2>How do they differ?</h2>
+            <h3>26 March 2024</h3>
+        </div>
+    </div>
     <div class="content">
-        <h1>The difference between Padding and Margin</h1>
-        <h2>How do they differ?</h2>
-        <h3>26 March 2024</h3>
   
         <div class="divider">
 
@@ -62,5 +75,15 @@
             </div>
         </div>
       </div>
+      <script>
+        window.addEventListener('scroll', function() {
+            const navBar = document.querySelector('.nav-bar');
+            if (window.pageYOffset > 20) {
+                navBar.classList.add('scrolled');
+            } else {
+                navBar.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
 </html>
