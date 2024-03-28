@@ -14,6 +14,19 @@ body {
     width: 100%;
 }
 
+.code-show {
+    position: absolute;
+    left: 40vw;
+    transform: scale(0);
+    z-index: 15;
+    transition: all 300ms ease-in-out;
+}
+
+.blog-image p:hover ~ .code-show {
+    left: 20vw;
+    transform: scale(1.4);
+}
+
 .blog-image {
     display: flex;
     align-items: center;
@@ -34,6 +47,11 @@ body {
     font-size: large;
     font-weight: 700;
 }
+
+.blog-image p:hover {
+    cursor: pointer;
+}
+
 .blog-image * {
     margin: auto;
 }

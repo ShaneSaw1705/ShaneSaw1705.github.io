@@ -158,10 +158,10 @@ body {
 }
 
 .links ul {
-    list-style-type: upper-roman;
+    list-style-type: none;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     justify-content: start;
 }
 
@@ -171,4 +171,8 @@ body {
 .links ul li a {
     text-decoration: none;
     color: var(--main-color);
+}
+
+.links ul li a:hover {
+    text-decoration: underline;
 }
